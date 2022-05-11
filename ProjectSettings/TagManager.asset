@@ -7,7 +7,6 @@ TagManager:
   - Low
   - High
   - PickUp
-  - Wall
   layers:
   - Default
   - TransparentFX
