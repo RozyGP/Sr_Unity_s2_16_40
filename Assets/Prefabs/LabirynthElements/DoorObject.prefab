@@ -433,3 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 3031004239343653268}
   myColor: 0
+  red: {fileID: 1110233775959259594, guid: c3b0e061ddd3a4145a4acc6a4f7bd429, type: 3}
+  green: {fileID: 1877244072416195789, guid: d7881cd000a83c0489bdd664d2808786, type: 3}
+  gold: {fileID: -354735261257320667, guid: 96bf38ae30871c5429235091d6a7d07a, type: 3}
+  myLock: {fileID: 3031004238576703875}

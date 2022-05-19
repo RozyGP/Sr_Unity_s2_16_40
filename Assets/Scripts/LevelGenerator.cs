@@ -19,11 +19,11 @@ public class LevelGenerator : MonoBehaviour
             {
                 if(Random.Range(1,100) % 3 == 0)
                 {
-                    child.gameObject.GetComponent<Renderer>().material = material01;
+                    child.gameObject.GetComponent<Renderer>().sharedMaterial = material01;
                 }
                 else
                 {
-                    child.gameObject.GetComponent<Renderer>().material = material02;
+                    child.gameObject.GetComponent<Renderer>().sharedMaterial = material02;
                 }
             }
 
@@ -33,8 +33,8 @@ public class LevelGenerator : MonoBehaviour
                 {
                     if (grandchild.tag == "Wall")
                     {
-                        grandchild.gameObject.GetComponent<Renderer>().material = 
-                            child.gameObject.GetComponent<Renderer>().material;
+                        grandchild.gameObject.GetComponent<Renderer>().sharedMaterial = 
+                            child.gameObject.GetComponent<Renderer>().sharedMaterial;
                     }
                 }
             }

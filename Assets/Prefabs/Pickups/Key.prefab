@@ -108,4 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5e36144d9a4dc4eb08d8a57e4fa0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickedClip: {fileID: 8300000, guid: d8a96520684ea524b9214ea4188418d3, type: 3}
   color: 2
+  red: {fileID: 1110233775959259594, guid: c3b0e061ddd3a4145a4acc6a4f7bd429, type: 3}
+  green: {fileID: 1877244072416195789, guid: d7881cd000a83c0489bdd664d2808786, type: 3}
+  gold: {fileID: -354735261257320667, guid: 96bf38ae30871c5429235091d6a7d07a, type: 3}

@@ -10,9 +10,35 @@ public class Lock : MonoBehaviour
     bool locked = false;
     Animator key;
 
+    public Material red;
+    public Material green;
+    public Material gold;
+
+    public Renderer myLock;
+
     private void Start()
     {
         key = GetComponent<Animator>();
+        SetMyColor();
+    }
+
+    void SetMyColor()
+    {
+        switch (myColor)
+        {
+            case KeyColor.Red:
+                GetComponent<Renderer>().material = red;
+                myLock.material = red;
+                break;
+            case KeyColor.Green:
+                GetComponent<Renderer>().material = green;
+                myLock.material = green;
+                break;
+            case KeyColor.Gold:
+                GetComponent<Renderer>().material = gold;
+                myLock.material = gold;
+                break;
+        }
     }
 
     private void Update()

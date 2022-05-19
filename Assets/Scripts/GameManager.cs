@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
+        PlayClip(pauseClip);
         Debug.Log("Game Paused");
         Time.timeScale = 0f;
         gamePaused = true;
@@ -76,6 +77,7 @@ public class GameManager : MonoBehaviour
 
     public void ResumeGame()
     {
+        PlayClip(resumeClip);
         Debug.Log("Game Resumed");
         Time.timeScale = 1f;
         gamePaused = false;
@@ -101,10 +103,12 @@ public class GameManager : MonoBehaviour
         CancelInvoke("Stopper");
         if (win)
         {
+            PlayClip(winClip);
             Debug.Log("You win!!! Reload?");
         }
         else
         {
+            PlayClip(loseClip);
             Debug.Log("You lose!!! Reload?");
         }
     }
